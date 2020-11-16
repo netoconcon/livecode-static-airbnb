@@ -1,0 +1,7 @@
+<h1>Flats</h1>
+<ul>
+	<% @flats.each do |flat| %>
+		<li>Name: <%= flat['name'] %> | <%= link_to "Ver", flat_path(flat["id"]) %></li>
+	<% end %>
+</ul>
+
